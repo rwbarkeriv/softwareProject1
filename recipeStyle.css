@@ -1,0 +1,130 @@
+header, main, footer {
+    padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+}
+
+.fill {
+    overflow: hidden;
+    height: 300px;
+}
+
+#logo-container {
+    padding-left: 0;
+}
+
+.side-nav a .navlinks {
+    padding-left: 32px;
+}
+
+.side-nav .collapsible-header, .side-nav.fixed .collapsible-header {
+    padding: 0 32px;
+}
+
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 90%;
+    }}
+
+.top-nav {
+    height: 110px;
+}
+
+nav .brand-logo {
+    line-height: 110px;
+}
+
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    line-height: 110px;
+}
+
+#recipeImg {
+    width: 100%;
+    height: 100%;
+}
+
+#recipeTitle {
+    padding-top: 3%;
+}
+
+h4 {
+    text-align: center;
+}
+
+ #titleSpan {
+     text-align: center;
+     display: block;
+}
+
+#recipeIngredients ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#recipeIngredients li {
+    padding-left: 1em;
+    text-indent: -.7em;
+}
+
+#recipeIngredients li::before {
+    content: "• ";
+    color: red; /* or whatever color you prefer */
+}
+
+h5 {
+    border-bottom: 2px solid teal;
+}
+
+.material-icons {
+    font-size: 3rem;
+}
+
+.custom-counter {
+    margin-left: 0;
+    padding-right: 0;
+    list-style-type: none;
+    padding-left: 0
+
+;
+}
+
+.custom-counter li {
+    counter-increment: step-counter;
+}
+
+.custom-counter li::before {
+    content: counter(step-counter);
+    margin-right: 5px;
+    font-size: 80%;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 2px;
+    position: absolute;
+    margin: 0 0 .5rem 0;
+}
+ #thumbup {
+     margin-right: 5%;
+     margin-top: .8rem;
+ }
+
+ #thumbdown {
+     margin-top: .8rem;
+ }
+
+.directions{
+    display: block;
+    margin-left: 30px;
+}
+
+#addFavorite {
+    margin-top: 1.25rem
+;
+
+}
