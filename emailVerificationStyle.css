@@ -1,0 +1,58 @@
+
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 100px;
+    background: whitesmoke;
+}
+
+#imageBackground {
+    background: rgb(30, 30, 30);
+    margin-top: 8vh;
+}
+
+#verifyEmail{
+    background: white ;
+    height: 40vh;
+}
+
+body {
+    background-color: #818181;
+}
+
+#verifyEmail span {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#verifyEmail a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4 {
+    margin-top: 0;
+    padding: 20px;
+    display: block;
+}
+
+.row {
+    margin: 0;
+}
+
+#verifyEmail .valign-wrapper {
+    background: #696969;
+}
+
+#imageBackground {
+    background: whitesmoke;
+    border-bottom: 1px solid lightgray;
+}
+
+
+

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>-->
+    <script src="../node_modules/materialize-css/dist/js/materialize.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../node_modules/materialize-tags/dist/css/materialize-tags.min.css">
+
+
+    <script src="../node_modules/materialize-tags/dist/js/materialize-tags.min.js"></script>
+
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+
+    <script src="../js/animateHome.js"></script>
+
+
+</head>
+<body>
+
+
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+
+            <a href="#home" class="brand-logo" id="logo"><img src="http://res.cloudinary.com/rwbarker/image/upload/c_scale,h_64,w_64/v1492540669/logo_final_secondary_pages_tlz4sw.png"></a>
+            <a href="#home" class="hide-on-med-and-down" id="brandName"><h4><span id="brandNameVar">var</span><span id="brandNameIngredient">Ingredient</span></h4></a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons" id="homePageSmallNav">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#topRecipes">Top Recipes</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a class="waves-effect waves-light btn teal" href="#loginModal"><i class="material-icons left">perm_identity</i>Login</a>
+                </li>
+                <li><a class="waves-effect waves-light btn teal" href="#signupModal"><i
+                        class="material-icons left">subtitles</i>Sign-up</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div id="homePageHtml">
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col s6 offset-s3">
+                    <h3>Login</h3>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email" data-error="Please use a valid email." data-success="">Email</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                        <label class="forgotPass">
+                            <a href='#!'><b>Forgot Password?</b></a>
+                        </label>
+                        <div class="switch">
+                            <p>Remember Me?</p>
+                            <label>
+                                No
+                                <input type="checkbox">
+                                <span class="lever"></span>
+                                Yes
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer" id="loginModalFooter">
+            <div class="row">
+                <div class="col s12">
+                    <div class="col s4 offset-s4">
+                        <a href="#!" class="modal-action modal-close waves-effect waves-default btn"
+                           id="submit">Submit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col s6 offset-s3">
+                    <h3>Sign-up</h3>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email2" type="email" class="validate">
+                            <label for="email" data-error="Please use a valid email" data-success="">Email</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password2" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="passwordValidate" type="password" class="validate">
+                            <label for="password">Confirm Password</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="modal-footer" id="signupModalFooter">
+            <div class="row">
+                <div class="col s12">
+                    <div class="col s4 offset-s4">
+                        <a href="#!" class="modal-action modal-close waves-effect waves-default btn"
+                           id="submit2">Submit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sideNav">
+        <ul id="mobile-demo" class="side-nav">
+            <li><a href="#topRecipes">Top Recipes</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a class="waves-effect waves-light btn teal" href="#loginModal"><i class="material-icons left">perm_identity</i>Login</a>
+            </li>
+            <li><a class="waves-effect waves-light btn teal" href="#signupModal"><i class="material-icons left">subtitles</i>Sign-up</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div id="content">
+
+
+        <section id="home" class="section scrollspy">
+            <div class="row">
+
+                <div class="col s6 offset-s3 element">
+                    <div class="input-field col s12">
+                        <input type="text" name="tags" id="tags" value="" data-role="materialtags">
+                    </div>
+                    <div class="col s6 offset-s3">
+                        <button class="waves-effect waves-light btn teal" id="homeSearch">Search</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="topRecipes" class="section scrollspy">
+            <div class="row">
+                <div class="col s12">
+                    <h3>Top Recipes</h3>
+                </div>
+                </div>
+                <div class="row" id="card2">
+                    <div class="col s4">
+                        <div class="card medium">
+                            <div class="card-image">
+                                <img src="../images/burger.png">
+                            </div>
+                            <div class="card-content">
+                                <ul>
+                                    <li># of Ingredients:</li>
+                                    <li>Likes:</li>
+                                    <li>Dislikes:</li>
+                                </ul>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s4">
+                        <div class="card medium">
+                            <div class="card-image">
+                                <img src="../images/burger.png">
+                            </div>
+                              <div class="card-content">
+                                  <ul>
+                                      <li># of Ingredients:</li>
+                                      <li>Likes:</li>
+                                      <li>Dislikes:</li>
+                                  </ul>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s4">
+                        <div class="card medium">
+                            <div class="card-image">
+                                <img src="../images/burger.png">
+                            </div>
+                            <div class="card-content">
+                                <ul>
+                                    <li># of Ingredients:</li>
+                                    <li>Likes:</li>
+                                    <li>Dislikes:</li>
+                                </ul>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="reviews" class="section scrollspy">
+            <div class="row">
+                <div class="col s12">
+                    <h3>Reviews</h3>
+                </div>
+            </div>
+            <div class="row" id="card">
+
+                <div class="col s4">
+                    <div class="card-panel teal">
+                     <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+                          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                     </span>
+                    </div>
+                </div>
+
+                <div class="col s4">
+                    <div class="card-panel teal">
+                  <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+                    </div>
+                </div>
+
+                <div class="col s4">
+                    <div class="card-panel teal">
+                      <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                      </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section scrollspy">
+            <div class="row">
+                <div class="col s12">
+                    <h3>Contact Us</h3>
+                </div>
+            </div>
+
+            <form id="contactUs">
+
+                <div class="row">
+                    <div class="col s12">
+                        <div class="col s4" id="contactUsHeader">
+                            <h5>
+                                For general questions feel free to send us a message!
+                            </h5>
+                            <hr id="contactHr">
+                        </div>
+
+                        <div class="col s4 offset-s4" id="recipeRequest">
+                            <h5>Have a good recipe? Click the button and fill out the form to get it added!</h5>
+                            <a class="waves-effect waves-light btn" href="#recipeModal">Add Recipe</a>
+
+                            <div id="recipeModal" class="modal">
+                                <div class="modal-content">
+                                    <h4>Recipe Request</h4>
+
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <div class="input-field">
+                                                <input id="contactEmail2" type="email" class="validate">
+                                                <label for="contactEmail2" data-error="Please try again."
+                                                       data-success="">Email</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <div class="input-field">
+                                            <textarea id="recipeName" class="materialize-textarea"
+                                                      required="required"></textarea>
+                                                <label for="recipeName">Recipe Name</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <div class="input-field">
+                                                <input type="text" name="tags" id="ingredientTags" value=""
+                                                       data-role="materialtags" required>
+                                                <label for="ingredientTags">Ingredients: Please add name and
+                                                    amount.</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <div class="input-field" id="recipeCookTime">
+                                                <select required>
+                                                    <option value="" disabled selected>Choose your option</option>
+                                                    <option value="5">5 mins</option>
+                                                    <option value="10">10 mins</option>
+                                                    <option value="15">15 mins</option>
+                                                    <option value="20">20 mins</option>
+                                                    <option value="25">25 mins</option>
+                                                    <option value="30">30 mins</option>
+                                                    <option value="35">35 mins</option>
+                                                    <option value="40">40 mins</option>
+                                                    <option value="45">45 mins</option>
+                                                    <option value="50">50 mins</option>
+                                                    <option value="55">55 mins</option>
+                                                    <option value="60">60 mins</option>
+                                                    <option value="65">1 hour 5 mins</option>
+                                                    <option value="70">1 hour 10 mins</option>
+                                                    <option value="75">1 hour 15 mins</option>
+                                                    <option value="80">1 hour 20 mins</option>
+                                                    <option value="85">1 hour 25 mins</option>
+                                                    <option value="90">1 hour 30 mins</option>
+                                                    <option value="95">1 hour 35 mins</option>
+                                                    <option value="100">1 hour 40 mins</option>
+                                                    <option value="105">1 hour 45 mins</option>
+                                                    <option value="110">1 hour 50 mins</option>
+                                                    <option value="115">1 hour 55 mins</option>
+                                                    <option value="120">2 hours</option>
+                                                    <option value="125">2 hour 5 mins</option>
+                                                    <option value="130">2 hour 10 mins</option>
+                                                    <option value="135">2 hour 15 mins</option>
+                                                    <option value="140">2 hour 20 mins</option>
+                                                    <option value="145">2 hour 25 mins</option>
+                                                    <option value="150">2 hour 30 mins</option>
+                                                    <option value="155">2 hour 35 mins</option>
+                                                    <option value="160">2 hour 40 mins</option>
+                                                    <option value="165">2 hour 45 mins</option>
+                                                    <option value="170">2 hour 50 mins</option>
+                                                    <option value="175">2 hour 55 mins</option>
+                                                    <option value="180">3 hours</option>
+                                                    <option value="185">3 hour 5 mins</option>
+                                                    <option value="190">3 hour 10 mins</option>
+                                                    <option value="195">3 hour 15 mins</option>
+                                                    <option value="200">3 hour 20 mins</option>
+                                                    <option value="205">3 hour 25 mins</option>
+                                                    <option value="210">3 hour 30 mins</option>
+                                                    <option value="215">3 hour 35 mins</option>
+                                                    <option value="220">3 hour 40 mins</option>
+                                                    <option value="225">3 hour 45 mins</option>
+                                                    <option value="230">3 hour 50 mins</option>
+                                                    <option value="235">3 hour 55 mins</option>
+                                                    <option value="240">4 hours</option>
+                                                    <option value="245">4 hour 5 mins</option>
+                                                    <option value="250">4 hour 10 mins</option>
+                                                    <option value="255">4 hour 15 mins</option>
+                                                    <option value="260">4 hour 20 mins</option>
+                                                    <option value="265">4 hour 25 mins</option>
+                                                    <option value="270">4 hour 30 mins</option>
+                                                    <option value="275">4 hour 35 mins</option>
+                                                    <option value="280">4 hour 40 mins</option>
+                                                    <option value="285">4 hour 45 mins</option>
+                                                    <option value="290">4 hour 50 mins</option>
+                                                    <option value="295">4 hour 55 mins</option>
+                                                    <option value="300">5 hours</option>
+                                                </select>
+                                                <label>Cook Time</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <div class="input-field" id="recipeServings">
+                                                <select required>
+                                                    <option value="" disabled selected>Choose your option</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                </select>
+                                                <label>Number of Servings</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <div class="input-field">
+                                            <textarea id="recipeInstructions" class="materialize-textarea"
+                                                      required="required"></textarea>
+                                                <label for="recipeInstructions">Recipe Instructions</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer" id="recipeModalFooter">
+                                    <a href="#!" id="submitRecipe"
+                                       class="modal-action modal-close waves-effect waves-default btn-flat">Submit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="contactInputs">
+
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <input id="contactEmail" type="email" class="validate">
+                            <label for="contactEmail" data-error="Please try again." data-success="">Email</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <textarea id="messageText" class="materialize-textarea" required="required"></textarea>
+                            <label for="messageText">Message</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s4">
+                            <button id="sendMessage" class="btn waves-effect waves-light valign-wrapper" type="submit"
+                                    name="action">Send
+                                Message
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+
+        <footer id="homePageFooter" class="page-footer">
+            <div class="footer-copyright">
+                <div class="container" style="text-align: center">
+                    © 2017 Copyright
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</div>
+</body>
+</html>

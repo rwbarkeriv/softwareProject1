@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Results</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>-->
+    <script src="../node_modules/materialize-css/dist/js/materialize.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../node_modules/materialize-tags/dist/css/materialize-tags.min.css">
+
+
+    <script src="../node_modules/materialize-tags/dist/js/materialize-tags.min.js"></script>
+
+
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+
+    <script src="../js/animateHome.js"></script>
+
+
+</head>
+<body id="searchResultsBody">
+
+<div id="searchResultsHtml">
+    <!--<header>-->
+        <nav class="top-nav teal hide-on-med-and-up	">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="homePage.html" class="brand-logo">var<span>Ingredient</span></a>
+                    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons" id="smallNavMenuSearch">menu</i></a>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container">
+            <a href="#" data-activates="nav-mobile" class="button-collapse side-nav full hide-on-med-and-up"><i
+                    class="material-icons">menu</i></a>
+        </div>
+        <ul id="nav-mobile" class="side-nav fixed">
+            <li class="logo fill"><a id="logo-container" href="homePage.html"><img src="http://res.cloudinary.com/rwbarker/image/upload/c_scale,h_300,w_300/v1492503178/logo_final_bxjwsl.png"></a></li>
+            <li class="center"><a href="homePage.html" class="waves-effect waves-teal navlinks home">Home</a></li>
+            <li class="center"><a href="#!" class="waves-effect waves-teal navlinks myPantry">My Pantry</a></li>
+            <li class="center"><a href="#!" class="waves-effect waves-teal navlinks updateSearch"><i class="material-icons">search</i></a></li>
+            <li class="divider"></li>
+            <li class="center searchIngredients"><span id="newSearchIngredients">Search Ingredients</span></li>
+            <ul class="center">
+                <li>chicken</li>
+                <li>pork</li>
+                <li>peas</li>
+            </ul>
+            <li class="divider"></li>
+            <li class="center addIngredients">Add Ingredients:</li>
+            <ul class="collapsible" data-collapsible="expandable">
+                <li>
+                    <div class="collapsible-header">Meat</div>
+                    <div class="collapsible-body">
+                            <span>
+                                <input type="checkbox" class="filled-in" id="steak"/>
+                                <label for="steak">Steak</label>
+                                <input type="checkbox" class="filled-in" id="chickenBreast"/>
+                                <label for="chickenBreast">Chicken Breast</label>
+                                <input type="checkbox" class="filled-in" id="seaBass"/>
+                                <label for="seaBass">Sea Bass</label>
+                                <input type="checkbox" class="filled-in" id="chickenThigh"/>
+                                <label for="chickenThigh">Chicken Thigh</label>
+                                <input type="checkbox" class="filled-in" id="filetMignon"/>
+                                <label for="filetMignon">Filet Mignon</label>
+                                <input type="checkbox" class="filled-in" id="ribeye"/>
+                                <label for="ribeye">Rib Eye</label>
+                                <input type="checkbox" class="filled-in" id="porkLoin"/>
+                                <label for="porkLoin">Pork Loin</label>
+                            </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">Dairy</div>
+                    <div class="collapsible-body">
+                            <span>
+                                <input type="checkbox" class="filled-in" id="milk"/>
+                                <label for="milk">Milk</label>
+                                <input type="checkbox" class="filled-in" id="cheddarCheese"/>
+                                <label for="cheddarCheese">Cheddar Cheese</label>
+                                <input type="checkbox" class="filled-in" id="creamCheese"/>
+                                <label for="creamCheese">Cream Cheese</label>
+                                <input type="checkbox" class="filled-in" id="swissCheese"/>
+                                <label for="swissCheese">Swiss Cheese</label>
+                                <input type="checkbox" class="filled-in" id="whippingCream"/>
+                                <label for="whippingCream">Whipping Cream</label>
+                                <input type="checkbox" class="filled-in" id="halfAndHalf"/>
+                                <label for="halfAndHalf">Half & Half</label>
+                                <input type="checkbox" class="filled-in" id="cottageCheese"/>
+                                <label for="cottageCheese">Cottage Cheese</label>
+                            </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">Vegetables</div>
+                    <div class="collapsible-body">
+                            <span>
+                                <input type="checkbox" class="filled-in" id="carrots"/>
+                                <label for="carrots">Carrots</label>
+                                <input type="checkbox" class="filled-in" id="potatoes"/>
+                                <label for="potatoes">Potatoes</label>
+                                <input type="checkbox" class="filled-in" id="yellowOnions"/>
+                                <label for="yellowOnions">Yellow Onions</label>
+                                <input type="checkbox" class="filled-in" id="redOnions"/>
+                                <label for="redOnions">Red Onions</label>
+                                <input type="checkbox" class="filled-in" id="zucchini"/>
+                                <label for="zucchini">Zucchini</label>
+                                <input type="checkbox" class="filled-in" id="broccoli"/>
+                                <label for="broccoli">Broccoli</label>
+                                <input type="checkbox" class="filled-in" id="asparagus"/>
+                                <label for="asparagus">Asparagus</label>
+                            </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">Fruit</div>
+                    <div class="collapsible-body">
+                            <span>
+                                <input type="checkbox" class="filled-in" id="steak"/>
+                                <label for="steak">Steak</label>
+                                <input type="checkbox" class="filled-in" id="chickenBreast"/>
+                                <label for="chickenBreast">Chicken Breast</label>
+                                <input type="checkbox" class="filled-in" id="seaBass"/>
+                                <label for="seaBass">Sea Bass</label>
+                                <input type="checkbox" class="filled-in" id="chickenThigh"/>
+                                <label for="chickenThigh">Chicken Thigh</label>
+                                <input type="checkbox" class="filled-in" id="filetMignon"/>
+                                <label for="filetMignon">Filet Mignon</label>
+                                <input type="checkbox" class="filled-in" id="ribeye"/>
+                                <label for="ribeye">Rib Eye</label>
+                                <input type="checkbox" class="filled-in" id="porkLoin"/>
+                                <label for="porkLoin">Pork Loin</label>
+                            </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">Oils</div>
+                    <div class="collapsible-body">
+                            <span>
+                                <input type="checkbox" class="filled-in" id="steak"/>
+                                <label for="steak">Steak</label>
+                                <input type="checkbox" class="filled-in" id="chickenBreast"/>
+                                <label for="chickenBreast">Chicken Breast</label>
+                                <input type="checkbox" class="filled-in" id="seaBass"/>
+                                <label for="seaBass">Sea Bass</label>
+                                <input type="checkbox" class="filled-in" id="chickenThigh"/>
+                                <label for="chickenThigh">Chicken Thigh</label>
+                                <input type="checkbox" class="filled-in" id="filetMignon"/>
+                                <label for="filetMignon">Filet Mignon</label>
+                                <input type="checkbox" class="filled-in" id="ribeye"/>
+                                <label for="ribeye">Rib Eye</label>
+                                <input type="checkbox" class="filled-in" id="porkLoin"/>
+                                <label for="porkLoin">Pork Loin</label>
+                            </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">Spices</div>
+                    <div class="collapsible-body">
+                            <span>
+                                <input type="checkbox" class="filled-in" id="steak"/>
+                                <label for="steak">Steak</label>
+                                <input type="checkbox" class="filled-in" id="chickenBreast"/>
+                                <label for="chickenBreast">Chicken Breast</label>
+                                <input type="checkbox" class="filled-in" id="seaBass"/>
+                                <label for="seaBass">Sea Bass</label>
+                                <input type="checkbox" class="filled-in" id="chickenThigh"/>
+                                <label for="chickenThigh">Chicken Thigh</label>
+                                <input type="checkbox" class="filled-in" id="filetMignon"/>
+                                <label for="filetMignon">Filet Mignon</label>
+                                <input type="checkbox" class="filled-in" id="ribeye"/>
+                                <label for="ribeye">Rib Eye</label>
+                                <input type="checkbox" class="filled-in" id="porkLoin"/>
+                                <label for="porkLoin">Pork Loin</label>
+                            </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">Beverages</div>
+                    <div class="collapsible-body">
+                            <span>
+                                <input type="checkbox" class="filled-in" id="steak"/>
+                                <label for="steak">Steak</label>
+                                <input type="checkbox" class="filled-in" id="chickenBreast"/>
+                                <label for="chickenBreast">Chicken Breast</label>
+                                <input type="checkbox" class="filled-in" id="seaBass"/>
+                                <label for="seaBass">Sea Bass</label>
+                                <input type="checkbox" class="filled-in" id="chickenThigh"/>
+                                <label for="chickenThigh">Chicken Thigh</label>
+                                <input type="checkbox" class="filled-in" id="filetMignon"/>
+                                <label for="filetMignon">Filet Mignon</label>
+                                <input type="checkbox" class="filled-in" id="ribeye"/>
+                                <label for="ribeye">Rib Eye</label>
+                                <input type="checkbox" class="filled-in" id="porkLoin"/>
+                                <label for="porkLoin">Pork Loin</label>
+                            </span>
+                    </div>
+                </li>
+            </ul>
+        </ul>
+    <!--</header>-->
+
+    <main>
+        <div class="container" id="results">
+            <div class="col s12">
+                <div class="row">
+                    <div class="input-field col s4 offset-s8">
+                        <select>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Popularity</option>
+                            <option value="2"># of Ingredients</option>
+                        </select>
+                        <label>Filter by:</label>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col s4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/sample-1.jpg">
+                            </div>
+                            <div class="card-content">
+                                <ul>
+                                    <li># of Ingredients:</li>
+                                    <li>Likes:</li>
+                                    <li>Dislikes:</li>
+                                </ul>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/sample-1.jpg">
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/sample-1.jpg">
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12">
+                <div class="row">
+                    <div class="col s4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/sample-1.jpg">
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/sample-1.jpg">
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/sample-1.jpg">
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12">
+                <div class="row">
+                    <div class="col s4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/sample-1.jpg">
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/sample-1.jpg">
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/sample-1.jpg">
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12">
+                <div class="row">
+                    <div class="col s4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/sample-1.jpg">
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/sample-1.jpg">
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/sample-1.jpg">
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12">
+                <div class="row">
+                    <div class="col s4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/sample-1.jpg">
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/sample-1.jpg">
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/sample-1.jpg">
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <ul class="pagination center">
+            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+            <li class="active"><a href="#!">1</a></li>
+            <li class="waves-effect"><a href="#!">2</a></li>
+            <li class="waves-effect"><a href="#!">3</a></li>
+            <li class="waves-effect"><a href="#!">4</a></li>
+            <li class="waves-effect"><a href="#!">5</a></li>
+            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+        </ul>
+    </footer>
+</div>
+</body>
+</html>
