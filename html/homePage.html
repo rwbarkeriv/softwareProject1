@@ -34,7 +34,8 @@
         <div class="nav-wrapper">
 
             <a href="#home" class="brand-logo" id="logo"><img src="http://res.cloudinary.com/rwbarker/image/upload/c_scale,h_64,w_64/v1492540669/logo_final_secondary_pages_tlz4sw.png"></a>
-            <a href="#home" class="hide-on-med-and-down" id="brandName"><h4><span id="brandNameVar">var</span><span id="brandNameIngredient">Ingredient</span></h4></a>
+            <a href="#home" class="hide-on-med-and-down" id="brandName"><h4><span id="brandNameVar">var</span><span
+                    id="brandNameIngredient">Ingredient</span></h4></a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons" id="homePageSmallNav">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#topRecipes">Top Recipes</a></li>
@@ -44,6 +45,11 @@
                 </li>
                 <li><a class="waves-effect waves-light btn teal" href="#signupModal"><i
                         class="material-icons left">subtitles</i>Sign-up</a></li>
+
+                <li><a class="waves-effect waves-light btn teal" href="#!"><i class="material-icons left">thumb_down</i>Logout</a>
+                </li>
+                <li><a class="waves-effect waves-light btn teal" href="userPage.html"><i
+                        class="material-icons left">shopping_basket</i>My Pantry</a></li>
             </ul>
         </div>
     </nav>
@@ -182,62 +188,62 @@
                 <div class="col s12">
                     <h3>Top Recipes</h3>
                 </div>
-                </div>
-                <div class="row" id="card2">
-                    <div class="col s4">
-                        <div class="card medium">
-                            <div class="card-image">
-                                <img src="../images/burger.png">
-                            </div>
-                            <div class="card-content">
-                                <ul>
-                                    <li># of Ingredients:</li>
-                                    <li>Likes:</li>
-                                    <li>Dislikes:</li>
-                                </ul>
-                            </div>
-                            <div class="card-action">
-                                <a href="#">This is a link</a>
-                            </div>
+            </div>
+            <div class="row" id="card2">
+                <div class="col s4">
+                    <div class="card medium">
+                        <div class="card-image">
+                            <img src="../images/burger.png">
                         </div>
-                    </div>
-
-                    <div class="col s4">
-                        <div class="card medium">
-                            <div class="card-image">
-                                <img src="../images/burger.png">
-                            </div>
-                              <div class="card-content">
-                                  <ul>
-                                      <li># of Ingredients:</li>
-                                      <li>Likes:</li>
-                                      <li>Dislikes:</li>
-                                  </ul>
-                            </div>
-                            <div class="card-action">
-                                <a href="#">This is a link</a>
-                            </div>
+                        <div class="card-content">
+                            <ul>
+                                <li># of Ingredients:</li>
+                                <li>Likes:</li>
+                                <li>Dislikes:</li>
+                            </ul>
                         </div>
-                    </div>
-
-                    <div class="col s4">
-                        <div class="card medium">
-                            <div class="card-image">
-                                <img src="../images/burger.png">
-                            </div>
-                            <div class="card-content">
-                                <ul>
-                                    <li># of Ingredients:</li>
-                                    <li>Likes:</li>
-                                    <li>Dislikes:</li>
-                                </ul>
-                            </div>
-                            <div class="card-action">
-                                <a href="#">This is a link</a>
-                            </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
                         </div>
                     </div>
                 </div>
+
+                <div class="col s4">
+                    <div class="card medium">
+                        <div class="card-image">
+                            <img src="../images/burger.png">
+                        </div>
+                        <div class="card-content">
+                            <ul>
+                                <li># of Ingredients:</li>
+                                <li>Likes:</li>
+                                <li>Dislikes:</li>
+                            </ul>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s4">
+                    <div class="card medium">
+                        <div class="card-image">
+                            <img src="../images/burger.png">
+                        </div>
+                        <div class="card-content">
+                            <ul>
+                                <li># of Ingredients:</li>
+                                <li>Likes:</li>
+                                <li>Dislikes:</li>
+                            </ul>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="reviews" class="section scrollspy">
@@ -249,26 +255,64 @@
             <div class="row" id="card">
 
                 <div class="col s4">
-                    <div class="card-panel teal">
-                     <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-                          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-                     </span>
+                    <div class="card teal">
+                        <div class="reviewText">
+                            <br>
+                            <p>
+                                "I have been in the business a long time and it is refreshing to see such an innovative
+                                and useful product.
+                                The user experience is well designed and the function is flawless."
+                                <br>
+                                <br>
+                            </p>
+                        </div>
+                        <div class="reviewer">
+                            <img src="http://res.cloudinary.com/rwbarker/image/upload/c_scale,w_92/v1492761116/cardImg_ct9vqo.png">
+                            <p class="white-text">
+                                Jeff Nichols CCO of Cool Company
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col s4">
-                    <div class="card-panel teal">
-                  <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-                  </span>
+                    <div class="card teal">
+                        <div class="reviewText">
+                            <br>
+                            <p>
+                                "I never want to go to the store so I am constantly
+                                facing the issue of what can I make with what I have and this app
+                                has kept me from starvation on several occasions. Love it!
+                                <br>
+                                <br>
+                            </p>
+                        </div>
+                        <div class="reviewer">
+                            <img src="http://res.cloudinary.com/rwbarker/image/upload/c_scale,w_92/v1492764043/reviewer2_mzys5e.png">
+                            <p class="white-text">
+                                Jack Wilde Journalist at Tech Times
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col s4">
-                    <div class="card-panel teal">
-                      <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-                      </span>
+                    <div class="card teal">
+                        <div class="reviewText">
+                            <br>
+                            <p>
+                                "I have worked as a head chef for twenty years. I tried out the application and
+                                I have to say it has some amazing recipes. varIngredient definitely has good taste!"
+                                <br>
+                                <br>
+                            </p>
+                        </div>
+                        <div class="reviewer">
+                            <img src="http://res.cloudinary.com/rwbarker/image/upload/c_scale,w_92/v1492764048/reviewer3_j1jvye.png">
+                            <p class="white-text">
+                                June Smith Chef at Delicious Spot
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -404,27 +448,6 @@
 
                                     <div class="row">
                                         <div class="col s12">
-                                            <div class="input-field" id="recipeServings">
-                                                <select required>
-                                                    <option value="" disabled selected>Choose your option</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    <option value="8">8</option>
-                                                    <option value="9">9</option>
-                                                    <option value="10">10</option>
-                                                </select>
-                                                <label>Number of Servings</label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col s12">
                                             <div class="input-field">
                                             <textarea id="recipeInstructions" class="materialize-textarea"
                                                       required="required"></textarea>
@@ -443,7 +466,9 @@
                         </div>
                     </div>
                 </div>
+            </form>
 
+            <form>
                 <div class="row" id="contactInputs">
 
                     <div class="row">
@@ -461,7 +486,8 @@
                     </div>
                     <div class="row">
                         <div class="col s4">
-                            <button id="sendMessage" class="btn waves-effect waves-light valign-wrapper" type="submit"
+                            <button id="sendMessage" class="btn waves-effect waves-light valign-wrapper"
+                                    type="submit"
                                     name="action">Send
                                 Message
                             </button>

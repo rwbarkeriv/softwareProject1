@@ -29,7 +29,8 @@
         <nav class="top-nav teal hide-on-med-and-up">
             <div class="container">
                 <div class="nav-wrapper">
-                    <a href="homePage.html" class="brand-logo">var<span id="topNavBrandUserPage">Ingredient</span></a>
+                    <a href="homePage.html" class="brand-logo"><span class="topNavBrandNameVar">var</span><span
+                            class="topNavBrandNameIngredient">Ingredient</span></a>
                     <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons"
                                                                                        id="smallNavMenu">menu</i></a>
                 </div>
@@ -43,17 +44,170 @@
             <li class="logo fill"><a id="logo-container" href="homePage.html"><img
                     src="http://res.cloudinary.com/rwbarker/image/upload/c_scale,h_300,w_300/v1492503178/logo_final_bxjwsl.png"></a>
             </li>
-            <li class="divider"></li>
-            <li class="bold"><a href="homePage.html" class="waves-effect waves-teal navlinks">Home</a></li>
+            <li><a href="homePage.html" class="waves-effect waves-orange navlinks" id="homeLink">Home</a></li>
+            <li class="center"><a href="#!" class="waves-effect waves-orange navlinks updateSearch"><i class="material-icons">search</i></a></li>
             <li class="divider"></li>
 
-            <li class="bold center"><a class='dropdown-button btn' href='#' data-activates='dropdown1'>Your
-                Ingredients</a>
-            </li>
-            <li class="bold center"><a class='dropdown-button btn' href='#' data-activates='dropdown2'>Add
-                Ingredients</a>
-            </li>
-            <li class="bold center"><a class='btn' href='#' data-activates='#'>New Search</a></li>
+            <li class="center searchIngredients">My Ingredients</li>
+
+            <ul class="center">
+                <li>chicken</li>
+                <li>pork</li>
+                <li>peas</li>
+            </ul>
+
+            <li class="divider"></li>
+            <li class="center addIngredients">Add Ingredients</li>
+            <ul class="collapsible" data-collapsible="expandable">
+                <li>
+                    <div class="collapsible-header">Meat</div>
+                    <div class="collapsible-body">
+                            <span>
+                                <input type="checkbox" class="filled-in" id="steak"/>
+                                <label for="steak">Steak</label>
+                                <input type="checkbox" class="filled-in" id="chickenBreast"/>
+                                <label for="chickenBreast">Chicken Breast</label>
+                                <input type="checkbox" class="filled-in" id="seaBass"/>
+                                <label for="seaBass">Sea Bass</label>
+                                <input type="checkbox" class="filled-in" id="chickenThigh"/>
+                                <label for="chickenThigh">Chicken Thigh</label>
+                                <input type="checkbox" class="filled-in" id="filetMignon"/>
+                                <label for="filetMignon">Filet Mignon</label>
+                                <input type="checkbox" class="filled-in" id="ribeye"/>
+                                <label for="ribeye">Rib Eye</label>
+                                <input type="checkbox" class="filled-in" id="porkLoin"/>
+                                <label for="porkLoin">Pork Loin</label>
+                            </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">Dairy</div>
+                    <div class="collapsible-body">
+                            <span>
+                                <input type="checkbox" class="filled-in" id="milk"/>
+                                <label for="milk">Milk</label>
+                                <input type="checkbox" class="filled-in" id="cheddarCheese"/>
+                                <label for="cheddarCheese">Cheddar Cheese</label>
+                                <input type="checkbox" class="filled-in" id="creamCheese"/>
+                                <label for="creamCheese">Cream Cheese</label>
+                                <input type="checkbox" class="filled-in" id="swissCheese"/>
+                                <label for="swissCheese">Swiss Cheese</label>
+                                <input type="checkbox" class="filled-in" id="whippingCream"/>
+                                <label for="whippingCream">Whipping Cream</label>
+                                <input type="checkbox" class="filled-in" id="halfAndHalf"/>
+                                <label for="halfAndHalf">Half & Half</label>
+                                <input type="checkbox" class="filled-in" id="cottageCheese"/>
+                                <label for="cottageCheese">Cottage Cheese</label>
+                            </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">Vegetables</div>
+                    <div class="collapsible-body">
+                            <span>
+                                <input type="checkbox" class="filled-in" id="carrots"/>
+                                <label for="carrots">Carrots</label>
+                                <input type="checkbox" class="filled-in" id="potatoes"/>
+                                <label for="potatoes">Potatoes</label>
+                                <input type="checkbox" class="filled-in" id="yellowOnions"/>
+                                <label for="yellowOnions">Yellow Onions</label>
+                                <input type="checkbox" class="filled-in" id="redOnions"/>
+                                <label for="redOnions">Red Onions</label>
+                                <input type="checkbox" class="filled-in" id="zucchini"/>
+                                <label for="zucchini">Zucchini</label>
+                                <input type="checkbox" class="filled-in" id="broccoli"/>
+                                <label for="broccoli">Broccoli</label>
+                                <input type="checkbox" class="filled-in" id="asparagus"/>
+                                <label for="asparagus">Asparagus</label>
+                            </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">Fruit</div>
+                    <div class="collapsible-body">
+                            <span>
+                                <input type="checkbox" class="filled-in" id="steak"/>
+                                <label for="steak">Steak</label>
+                                <input type="checkbox" class="filled-in" id="chickenBreast"/>
+                                <label for="chickenBreast">Chicken Breast</label>
+                                <input type="checkbox" class="filled-in" id="seaBass"/>
+                                <label for="seaBass">Sea Bass</label>
+                                <input type="checkbox" class="filled-in" id="chickenThigh"/>
+                                <label for="chickenThigh">Chicken Thigh</label>
+                                <input type="checkbox" class="filled-in" id="filetMignon"/>
+                                <label for="filetMignon">Filet Mignon</label>
+                                <input type="checkbox" class="filled-in" id="ribeye"/>
+                                <label for="ribeye">Rib Eye</label>
+                                <input type="checkbox" class="filled-in" id="porkLoin"/>
+                                <label for="porkLoin">Pork Loin</label>
+                            </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">Oils</div>
+                    <div class="collapsible-body">
+                            <span>
+                                <input type="checkbox" class="filled-in" id="steak"/>
+                                <label for="steak">Steak</label>
+                                <input type="checkbox" class="filled-in" id="chickenBreast"/>
+                                <label for="chickenBreast">Chicken Breast</label>
+                                <input type="checkbox" class="filled-in" id="seaBass"/>
+                                <label for="seaBass">Sea Bass</label>
+                                <input type="checkbox" class="filled-in" id="chickenThigh"/>
+                                <label for="chickenThigh">Chicken Thigh</label>
+                                <input type="checkbox" class="filled-in" id="filetMignon"/>
+                                <label for="filetMignon">Filet Mignon</label>
+                                <input type="checkbox" class="filled-in" id="ribeye"/>
+                                <label for="ribeye">Rib Eye</label>
+                                <input type="checkbox" class="filled-in" id="porkLoin"/>
+                                <label for="porkLoin">Pork Loin</label>
+                            </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">Spices</div>
+                    <div class="collapsible-body">
+                            <span>
+                                <input type="checkbox" class="filled-in" id="steak"/>
+                                <label for="steak">Steak</label>
+                                <input type="checkbox" class="filled-in" id="chickenBreast"/>
+                                <label for="chickenBreast">Chicken Breast</label>
+                                <input type="checkbox" class="filled-in" id="seaBass"/>
+                                <label for="seaBass">Sea Bass</label>
+                                <input type="checkbox" class="filled-in" id="chickenThigh"/>
+                                <label for="chickenThigh">Chicken Thigh</label>
+                                <input type="checkbox" class="filled-in" id="filetMignon"/>
+                                <label for="filetMignon">Filet Mignon</label>
+                                <input type="checkbox" class="filled-in" id="ribeye"/>
+                                <label for="ribeye">Rib Eye</label>
+                                <input type="checkbox" class="filled-in" id="porkLoin"/>
+                                <label for="porkLoin">Pork Loin</label>
+                            </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">Beverages</div>
+                    <div class="collapsible-body">
+                            <span>
+                                <input type="checkbox" class="filled-in" id="steak"/>
+                                <label for="steak">Steak</label>
+                                <input type="checkbox" class="filled-in" id="chickenBreast"/>
+                                <label for="chickenBreast">Chicken Breast</label>
+                                <input type="checkbox" class="filled-in" id="seaBass"/>
+                                <label for="seaBass">Sea Bass</label>
+                                <input type="checkbox" class="filled-in" id="chickenThigh"/>
+                                <label for="chickenThigh">Chicken Thigh</label>
+                                <input type="checkbox" class="filled-in" id="filetMignon"/>
+                                <label for="filetMignon">Filet Mignon</label>
+                                <input type="checkbox" class="filled-in" id="ribeye"/>
+                                <label for="ribeye">Rib Eye</label>
+                                <input type="checkbox" class="filled-in" id="porkLoin"/>
+                                <label for="porkLoin">Pork Loin</label>
+                            </span>
+                    </div>
+                </li>
+            </ul>
+        </ul>
 
         </ul>
     </header>
@@ -224,7 +378,7 @@
         <div class="container">
             <div class="col s12">
                 <div class="row">
-                    <h1 class="center">Favorite Recipes</h1>
+                    <h1 class="center">Favorites</h1>
                     <hr>
                 </div>
                 <div class="row">
