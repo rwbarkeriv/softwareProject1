@@ -1,0 +1,48 @@
+#headerBrandNameIngredient {
+    color: #104459;
+}
+
+#headerBrandNameVar {
+    color: #c3d7c3;
+}
+
+header {
+    background: dimgrey;
+}
+
+h1 {
+    margin: 0;
+    height: 100px;
+    text-align: left;
+}
+
+
+#brand {
+    line-height: 95px;
+}
+
+body{
+    background-color: #f8f8f8;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.text {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    background: dimgrey;
+    height: 100px;
+    font-size: 20px;
+}
+
+#footer {
+    text-align: center;
+}
+
+.valign {
+    width: 100%;
+}

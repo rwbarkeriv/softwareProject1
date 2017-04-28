@@ -593,6 +593,7 @@ header, main, footer {
 
 #searchResultsHtml .card {
     float: left;
+    width: 100%;
 }
 
 #searchResultsHtml #results {
@@ -667,6 +668,10 @@ header, main, footer {
 }
 
 #searchResultsHtml .searchIngredients .collection {
+    border: none;
+}
+
+#searchResultsHtml .searchIngredients .collection .collection-item {
     border: none;
 }
 
@@ -963,4 +968,8 @@ td {
 #recipeRequestInstructions {
     width: 40%;
 }
+
+/* -------------------------------------------PROJECT PAGE------------------------------------------------------- */
+
+
 
